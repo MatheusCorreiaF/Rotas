@@ -1,0 +1,24 @@
+<p>
+  aluno-form works!
+  (alunoFormComponent)
+</p>
+<div class="col s12">
+  <div class="row">
+    <div class="input-field col s12">
+      <input disabled id="id" type="text" class="validate" value=#{{aluno.id}}>
+      <label for="id" class="active">ID</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="nome" type="text" class="validate" [(ngModel)] = "aluno.nome">
+      <label for="nome" class="active">Nome</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="email" type="email" class="validate" value={{aluno.email}}>
+      <label for="email" class="active">Email</label>
+    </div>
+  </div>
+</div>

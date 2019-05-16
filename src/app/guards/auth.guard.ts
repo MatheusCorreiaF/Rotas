@@ -19,9 +19,11 @@ export class AuthGuard implements CanActivate
   {
     if(this.authService.usuarioEstaAutenticado())
     {
+      console.log("Guarda de Rota");
       return true;
     }
     else{
+          console.log("Guarda de Rota");
           this.router.navigate(['/login']);
         }
   }

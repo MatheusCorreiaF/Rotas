@@ -11,7 +11,7 @@
   </div>
   <div class="row">
     <div class="input-field col s12">
-      <input id="nome" type="text" class="validate" [(ngModel)] = "aluno.nome">
+      <input id="nome" type="text" class="validate" [(ngModel)] = "aluno.nome" (input)="onInput()">
       <label for="nome" class="active">Nome</label>
     </div>
   </div>

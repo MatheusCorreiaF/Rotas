@@ -19,7 +19,7 @@ export class AuthGuard implements CanActivate
   {
     if(this.authService.usuarioEstaAutenticado())
     {
-      console.log("Guarda de Rota");
+      console.log("Guarda de Rota: AuthGuard");
       return true;
     }
     else{

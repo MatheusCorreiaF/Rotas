@@ -13,7 +13,10 @@ export class AuthService
 
   constructor(private router: Router) { }
 
-  ngOnInit() { }
+  ngOnInit()
+  {
+
+  }
 
   fazerLogin(usuario: Usuario)
   {
